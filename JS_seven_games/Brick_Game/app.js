@@ -195,14 +195,3 @@ function changeDirection(){
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
