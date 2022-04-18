@@ -183,22 +183,62 @@ length: 300
 
 //Alt exemplu unde adaug valoarea elementelor din array unei alte variabile:
 
-let grades = [44, 12, 3, 454, 53, 60, 37, 28, 9, 101];
-grades.length=30;
-grades[34] = 40;
+// let grades = [44, 12, 3, 454, 53, 60, 37, 28, 9, 101];
+// grades.length=30;
+// grades[34] = 40;
 
-let count = 0;
-let total = 0;
+// let count = 0;
+// let total = 0;
 
-for(let i=0; i < grades.length; i++){
-    if(grades[i] !== undefined){ // daca elementul din array este diferit de undefined, atunci il adaug la total
-       //legit value 
-        count++;
-        total += grades[i]; // aici adaug valoarea elementului curent din array la total
-    }
-    let avg = total / count; // sa fac un total si sa il impart cu count (numarul de elemente din array)
-    console.log(avg);
-}
+// for(let i=0; i < grades.length; i++){
+//     if(grades[i] !== undefined){ // daca elementul din array este diferit de undefined, atunci il adaug la total  < si aici > !!!!!!!!!!!!!!!!!!!!!!!
+//        //legit value 
+//         count++;
+//         total += grades[i]; // aici adaug valoarea elementului curent din array la total < aici vroiam sa ajung >!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//     }
+//     let avg = total / count; // sa fac un total si sa il impart cu count (numarul de elemente din array)
+//     console.log(avg);
+// }
+
+
+
+
+
+// JavaScript Programming Tutorial 40 - Fill Array from User Input Indefinite Loop and Sentinel Value
+// https://www.youtube.com/watch?v=BR9sBx3LBHU&list=PL_c9BZzLwBRLVh9OdCBYFEql6esA6aRsi&index=42
+
+// {
+//     let grades = [];
+
+//     while(true){
+//         let inputGrade = prompt("Add a grade");
+
+//         if (inputGrade === "q" || inputGrade === "null"){
+//             break;   
+//         }  
+
+//         grades.push(Number(inputGrade));
+//         console.log(grades);
+//     } 
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
