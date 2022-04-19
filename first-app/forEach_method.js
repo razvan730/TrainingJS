@@ -20,16 +20,56 @@
 
     // forEach method with index
     grades.forEach(function(elementDinArray, index){
-        console.log(elementDinArray, index); // Result: 12, 0, 13, 1, 32, 2, 43, 3, 42, 4, 23, 5  (in consola se vede mai bine)
+        console.log(elementDinArray, index); // Result: 12, 0, 13, 1, 32, 2, 43, 3, 42, 4, 23, 5  (in consola se vede mai bine si sunt cate 2 elemente element + index)
     });
 
-
+     
      grades.forEach(function(elementDinArray, index, array){
-         console.log(elementDinArray, index, array); 
+         console.log(elementDinArray, index, array); // aici vad ca imi printeaza si array-ul fata de cel de mai sus
      });
      
+     //baza metodei e urmatoarea:
+     //grades.forEach(function(item , index , array){});
+     // item = elementul din array, index = indexul elementului din array, array = array-ul in care se afla elementul
+     // 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+ }
 
 
 
