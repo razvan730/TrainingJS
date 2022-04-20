@@ -187,31 +187,31 @@
     // Example 2: Block Scoped Variable
     // program showing block-scoped concept
     // global variable
-    {
-        let a = 'Hello';
+    // {
+    //     let a = 'Hello';
 
-        function greet() {
+    //     function greet() {
 
-            // local variable
-            let b = 'World';
+    //         // local variable
+    //         let b = 'World';
 
-            console.log(a + ' ' + b); // Hello World
+    //         console.log(a + ' ' + b); // Hello World
 
-            if (b == 'World') {
+    //         if (b == 'World') {
 
-                // block-scoped variable
-                let c = 'hello';
+    //             // block-scoped variable
+    //             let c = 'hello';
 
-                console.log(a + ' ' + b + ' ' + c); // Hello World hello
-            }
+    //             console.log(a + ' ' + b + ' ' + c); // Hello World hello
+    //         }
 
-            // variable c cannot be accessed here
-            console.log(a + ' ' + b + ' ' + c); // Uncaught ReferenceError: c is not defined
-        }
+    //         // variable c cannot be accessed here
+    //         console.log(a + ' ' + b + ' ' + c); // Uncaught ReferenceError: c is not defined
+    //     }
 
-        greet();
+    //     greet();
 
-    }
+    // }
 
     // In the above program, variable
 
@@ -230,12 +230,37 @@
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     ///////////////////////////////////////////////////////     JS Hoisting   //////////////////////////////////////////////////////////////////////
+    // Variable Hoisting
+    // In terms of variables and constants, keyword var is hoisted and let and const does not allow hoisting.
 
+
+    // // program to display value
+    // a = 5;
+    // console.log(a); // 5   (asta e hoisting, variabila a este declarata inainte de a fi folosita)
+    // var a; // 5 (asta nu e hoisting, variabila a este declarata inainte de a fi folosita)
+    // console.log(a); // 5
+
+    // // let si const nu au hoisting, variabilele sunt declarate inainte de a fi folosite.
+    
+
+
+
+    // Also, when the variable is used inside the function, the variable is hoisted only to the top of the function. For example,
 
     // program to display value
-    a = 5;
-    console.log(a);
-    var a; // 5
+    var a = 4;
+
+    function greet() {
+        b = 'hello';
+        console.log(b); // hello
+        var b;
+    }
+
+    greet(); // hello
+    console.log(b); // Uncaught ReferenceError: b is not defined
+
+    // Note:
+    // In hoisting, the variable declaration is only accessible to the immediate scope.
 
 
 
@@ -243,18 +268,20 @@
 
 
 
+    // Function Hoisting
+    // A function can be called before declaring it. For example,
 
+    // program to print the text
+    greet();
 
+    function greet() {
+        console.log('Hi, there.');
+    }
 
+    // Output:
+    // Hi, there
 
-
-
-
-
-
-
-
-
+    
 
 
 
