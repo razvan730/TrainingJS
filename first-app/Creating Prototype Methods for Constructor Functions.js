@@ -29,6 +29,7 @@
 
 
     // sa invat sa fac genul de prototype methods (2.1 - 2.2)
+//}
 
 {
     
@@ -55,4 +56,3 @@
 
 
 
-//}
